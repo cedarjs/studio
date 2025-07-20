@@ -2,22 +2,27 @@
 
 ## Contributing
 
-### Local dev (Experimental)
-1. (Should only have to do this once)
-  `cd __fixtures__/test-project && touch yarn.lock && yarn`
-2. Make your changes to the source code.
-3. Run `RW_STUDIO_USER_PROJECT_PATH=./__fixtures__/test-project yarn rw dev`
-4. Run the Test Project that send in to Studio using `yarn rw dev` inside
-  `__fixtures__/test-project`
-5. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
-  correct path for your project (see example below under
-  [Troubleshooting](#troubleshooting))
-
 ### Test packaged version
 1. Make your changes to the source code.
 2. Run `yarn studio:package` - this will rebuild the project and package it locally.
 3. (Re-)start Studio by running `yarn rw studio` from within the
   `__fixtures__/test-project` directory.
+4. Run the Test Project that send in to Studio using `yarn rw dev` inside
+  `__fixtures__/test-project`
+5. (First time only) Migrate and seed the database:
+  ```bash
+  yarn rw prisma migrate dev
+  yarn rw prisma db seed
+  ```
+6. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
+  correct path for your project (see example below under
+  [Troubleshooting](#troubleshooting))
+
+### Local dev (Experimental)
+1. (Should only have to do this once)
+  `cd __fixtures__/test-project && touch yarn.lock && yarn`
+2. Make your changes to the source code.
+3. Run `RW_STUDIO_USER_PROJECT_PATH=./__fixtures__/test-project yarn rw dev`
 4. Run the Test Project that send in to Studio using `yarn rw dev` inside
   `__fixtures__/test-project`
 5. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
