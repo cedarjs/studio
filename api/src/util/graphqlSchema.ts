@@ -5,7 +5,7 @@ import { CodeFileLoader } from '@graphql-tools/code-file-loader'
 import { loadSchema, LoadSchemaOptions } from '@graphql-tools/load'
 import { print, visit } from 'graphql'
 
-import { rootSchema } from '@redwoodjs/graphql-server'
+import { rootSchema } from '@cedarjs/graphql-server'
 
 import type { Relationship } from '../../types/graphql'
 

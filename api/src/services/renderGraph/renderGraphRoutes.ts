@@ -1,6 +1,6 @@
-import { SyntaxError } from '@redwoodjs/graphql-server'
-import { getProject } from '@redwoodjs/structure'
-import type { RWRoute } from '@redwoodjs/structure/dist/model/RWRoute'
+import { SyntaxError } from '@cedarjs/graphql-server'
+import { getProject } from '@cedarjs/structure'
+import type { RWRoute } from '@cedarjs/structure/dist/model/RWRoute'
 
 import { getUserProjectPaths as getPaths } from 'src/util/project'
 import { getUserProjectConfig } from 'src/util/project'

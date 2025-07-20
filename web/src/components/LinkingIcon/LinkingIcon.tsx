@@ -1,4 +1,4 @@
-import { Link } from '@redwoodjs/router'
+import { Link } from '@cedarjs/router'
 
 export const LinkingIcon = ({ to }: { to: string }) => {
   return (

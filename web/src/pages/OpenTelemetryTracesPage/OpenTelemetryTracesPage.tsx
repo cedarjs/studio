@@ -1,7 +1,7 @@
 import { Title, Text, Flex, Card } from '@tremor/react'
 import { GetTraces } from 'types/graphql'
 
-import { Metadata, useQuery } from '@redwoodjs/web'
+import { Metadata, useQuery } from '@cedarjs/web'
 
 import TraceListItem from 'src/components/TraceListItem/TraceListItem'
 

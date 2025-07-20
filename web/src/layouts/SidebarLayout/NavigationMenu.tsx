@@ -1,6 +1,6 @@
 import { Flex, Title } from '@tremor/react'
 
-import { routes } from '@redwoodjs/router'
+import { routes } from '@cedarjs/router'
 
 import { MenuClosedIcon, MenuOpenIcon, StudioIcon } from 'src/icons/Icons'
 
@@ -22,7 +22,7 @@ export const NavigationMenu = () => {
         className="pt-4"
       >
         <StudioIcon className="h-8 w-auto shrink-0 text-tremor-brand-emphasis" />
-        <Title className="pl-3">RedwoodJS Studio</Title>
+        <Title className="pl-3">Cedar Studio</Title>
       </Flex>
       <nav className="flex flex-1 flex-col">
         <ul className="flex flex-1 flex-col gap-y-4">

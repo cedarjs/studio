@@ -4,7 +4,7 @@ import type {
   GetNetworkPerformanceQueryVariables,
 } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import ChartCard from 'src/components/Charts/ChartCard'
 import ChartEmptyState from 'src/components/Charts/ChartEmptyState'

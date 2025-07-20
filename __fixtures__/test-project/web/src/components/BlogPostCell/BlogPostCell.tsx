@@ -3,12 +3,12 @@ import type {
   FindBlogPostQueryVariables,
 } from 'types/graphql'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 import type {
   CellSuccessProps,
   CellFailureProps,
   TypedDocumentNode,
-} from '@redwoodjs/web'
+} from '@cedarjs/web'
 
 import BlogPost from 'src/components/BlogPost'
 import { getFirstNSentences } from 'src/lib/formatters'
@@ -49,11 +49,11 @@ export const Success = ({
     <Metadata
       title={blogPost.title}
       og={{
-        title: `${blogPost.title} | RedwoodJS Blog`,
+        title: `${blogPost.title} | CedarJS Blog`,
         description: getFirstNSentences(blogPost.body, 1),
-        site_name: 'redwoodjs.com',
+        site_name: 'cedarjs.com',
         image: blogPost.imageUrl,
-        url: `https://redwoodjs.com/blog-posts/${blogPost.id}`,
+        url: `https://cedarjs.com/blog-posts/${blogPost.id}`,
       }}
       article={{
         author: blogPost.author.fullName,
@@ -65,10 +65,10 @@ export const Success = ({
       }}
       twitter={{
         card: blogPost.id === 3 ? null : 'summary_large_image',
-        site: 'redwoodjs.com',
-        url: `https://redwoodjs.com/blog-posts/${blogPost.id}`,
+        site: 'cedarjs.com',
+        url: `https://cedarjs.com/blog-posts/${blogPost.id}`,
         creator: `@${blogPost.author.fullName}`,
-        title: blogPost.id === 2 ? null : `${blogPost.title} | RedwoodJS Blog`,
+        title: blogPost.id === 2 ? null : `${blogPost.title} | CedarJS Blog`,
         description: getFirstNSentences(blogPost.body, 1),
         image: blogPost.imageUrl,
         'image:alt': 'this is a description of image',

@@ -1,7 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
-import { getConfig, getConfigPath, getPaths } from '@redwoodjs/project-config'
+import { getConfig, getConfigPath, getPaths } from '@cedarjs/project-config'
 
 import { importFresh } from './import'
 

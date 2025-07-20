@@ -1,7 +1,7 @@
 import { logger } from '@prisma/internals'
 import type { QueryResolvers } from 'types/graphql'
 
-import { ValidationError } from '@redwoodjs/graphql-server'
+import { ValidationError } from '@cedarjs/graphql-server'
 
 import { db } from 'src/lib/db'
 

@@ -2,12 +2,12 @@ import path from 'node:path'
 
 import type { MutationResolvers, QueryResolvers } from 'types/graphql'
 
-import { UserInputError } from '@redwoodjs/graphql-server'
-import { resolveFile } from '@redwoodjs/project-config'
+import { UserInputError } from '@cedarjs/graphql-server'
+import { resolveFile } from '@cedarjs/project-config'
 import {
   type LiveQueryStorageMechanism,
   liveQueryStore,
-} from '@redwoodjs/realtime'
+} from '@cedarjs/realtime'
 
 import { db } from 'src/lib/db'
 import { extractMailComponents } from 'src/util/ast'

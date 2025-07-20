@@ -19,7 +19,7 @@ import {
   TruncateSpansMutationVariables,
 } from 'types/graphql'
 
-import { Metadata, useMutation, useQuery } from '@redwoodjs/web'
+import { Metadata, useMutation, useQuery } from '@cedarjs/web'
 
 import SpanListItem from 'src/components/SpanListItem/SpanListItem'
 import { SettingsIcon } from 'src/icons/Icons'

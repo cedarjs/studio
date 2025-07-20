@@ -1,6 +1,6 @@
 import type { GraphiqlQuery } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import { RedwoodGraphiQL } from 'src/components/RedwoodGraphiQL'
 

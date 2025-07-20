@@ -1,7 +1,7 @@
 import { Icon, Title } from '@tremor/react'
 
-import { routes, Link } from '@redwoodjs/router'
-import { Metadata } from '@redwoodjs/web'
+import { routes, Link } from '@cedarjs/router'
+import { Metadata } from '@cedarjs/web'
 
 import {
   DashboardIcon,
@@ -26,7 +26,7 @@ const features = [
   {
     name: 'Monitoring',
     description:
-      "Studio leverages OpenTelemetry data sent from your Redwood app. Observe what traces and spans indicate about your app's health. Found a problem? Make adjustments and then compare the difference to assess the improvement.",
+      "Studio leverages OpenTelemetry data sent from your CedarJS app. Observe what traces and spans indicate about your app's health. Found a problem? Make adjustments and then compare the difference to assess the improvement.",
     to: routes.opentelemetryTraces(),
     icon: MonitoringIcon,
   },
@@ -47,14 +47,14 @@ const features = [
   {
     name: 'Mailer',
     description:
-      'Redwood Studio is closely integrated with Redwood Mailer. Intercept emails during development. Monitor the emails being sent and received. Test and preview your email templates.',
+      'Cedar Studio is closely integrated with CedarJS Mailer. Intercept emails during development. Monitor the emails being sent and received. Test and preview your email templates.',
     to: routes.mailerInbox(),
     icon: MailerIcon,
   },
   {
     name: 'Search',
     description:
-      "We're always here to help. Quickly search the RedwoodJS Community, Documentation, and more. Get help to build your app faster. Just Command-K and go!",
+      "We're always here to help. Quickly search the CedarJS Community, Documentation, and more. Get help to build your app faster. Just Command-K and go!",
     to: null,
     icon: SearchIcon,
   },
@@ -66,9 +66,9 @@ const features = [
     icon: SettingsIcon,
   },
   {
-    name: 'Made with Redwood',
+    name: 'Made with CedarJS',
     description:
-      'Studio is built with RedwoodJS. It uses Realtime GraphQL to update data, cells for data fetching, authentication, routing for navigation, and more.',
+      'Studio is built with CedarJS. It uses Realtime GraphQL to update data, cells for data fetching, authentication, routing for navigation, and more.',
     to: null,
     icon: MadeWithRedwoodIcon,
   },
@@ -84,7 +84,7 @@ const features = [
 const AboutPage = () => {
   return (
     <div className="py-4">
-      <Metadata title="About" description="About Redwood Studio" />
+      <Metadata title="About" description="About Cedar Studio" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
@@ -93,10 +93,10 @@ const AboutPage = () => {
           </h2>
 
           <Title className="font-3xl mt-2 tracking-tight sm:text-4xl">
-            Get to Know Redwood Studio
+            Get to Know Cedar Studio
           </Title>
           <p className="mt-6 text-lg leading-8 text-tremor-content dark:text-dark-tremor-content">
-            Studio is your trusty companion for RedwoodJS development. It&apos;s
+            Studio is your trusty companion for CedarJS development. It&apos;s
             here to make your coding journey smoother by helping you
             collaborate, visualize, and track your app&apos;s performance.
             Let&apos;s make coding more enjoyable and informative together!

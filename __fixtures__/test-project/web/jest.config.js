@@ -1,8 +1,8 @@
-// More info at https://redwoodjs.com/docs/project-configuration-dev-test-build
+// More info at https://cedarjs.com/docs/project-configuration-dev-test-build
 
 const config = {
   rootDir: '../',
-  preset: '@redwoodjs/testing/config/jest/web',
+  preset: '@cedarjs/testing/config/jest/web',
 }
 
 module.exports = config

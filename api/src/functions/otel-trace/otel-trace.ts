@@ -2,7 +2,7 @@ import crypto from 'node:crypto'
 
 import type { APIGatewayEvent, Context } from 'aws-lambda'
 
-import { liveQueryStore } from '@redwoodjs/realtime'
+import { liveQueryStore } from '@cedarjs/realtime'
 
 import { db, generateTypicalValues } from 'src/lib/db'
 import { logger } from 'src/lib/logger'

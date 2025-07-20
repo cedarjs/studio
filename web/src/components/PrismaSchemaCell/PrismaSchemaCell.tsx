@@ -1,7 +1,7 @@
 import { Tab, TabGroup, TabList, TabPanels, TabPanel } from '@tremor/react'
 import type { FindPrismaSchemaQuery } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import 'reactflow/dist/style.css'
 

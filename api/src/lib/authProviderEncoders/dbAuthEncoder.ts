@@ -25,7 +25,7 @@ export const getDBAuthHeader = async (userId?: string) => {
 
   const {
     default: { encryptSession },
-  } = await import('@redwoodjs/auth-dbauth-api')
+  } = await import('@cedarjs/auth-dbauth-api')
 
   const id = isNumeric(userId) ? parseInt(userId) : userId
   const cookieName = await getCookieName()
@@ -39,7 +39,7 @@ export const getDBAuthHeader = async (userId?: string) => {
 }
 
 // Note that we can't use the `cookieName` function that's exported from
-// `@redwoodjs/auth-dbauth-api` because it would read the cookie name from the
+// `@cedarjs/auth-dbauth-api` because it would read the cookie name from the
 // Studio project. We need to read it from the user's project
 async function getCookieName() {
   const distAuthPath = path.join(

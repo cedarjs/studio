@@ -2,7 +2,7 @@ import { Card, Flex, Icon } from '@tremor/react'
 import { formatDistanceToNow, parseISO } from 'date-fns'
 import { Flight } from 'types/graphql'
 
-import { routes } from '@redwoodjs/router'
+import { routes } from '@cedarjs/router'
 
 import Tracker from 'src/components/FlightsCell/FlightTracker'
 import { FlightIcon, FlightHostIcon } from 'src/icons/Icons'

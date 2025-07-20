@@ -25,8 +25,8 @@ import {
 } from '@tremor/react'
 import { GetMailInbox } from 'types/graphql'
 
-import { useQuery } from '@redwoodjs/web'
-import { Metadata } from '@redwoodjs/web'
+import { useQuery } from '@cedarjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import MailRenderer from 'src/components/MailRenderer/MailRenderer'
 import {

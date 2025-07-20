@@ -10,7 +10,7 @@ import {
 import { formatDistanceToNow, parseISO } from 'date-fns'
 import type { FlightsPreviewQuery } from 'types/graphql'
 
-import { Link, routes } from '@redwoodjs/router'
+import { Link, routes } from '@cedarjs/router'
 
 import type { RscChunkMessage } from 'src/components/RscParser/types'
 

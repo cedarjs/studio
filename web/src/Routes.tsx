@@ -1,4 +1,4 @@
-import { Router, Route, Set } from '@redwoodjs/router'
+import { Router, Route, Set } from '@cedarjs/router'
 
 import SidebarLayout from 'src/layouts/SidebarLayout'
 

@@ -1,4 +1,4 @@
-import { NavLink } from '@redwoodjs/router'
+import { NavLink } from '@cedarjs/router'
 
 export type TNavigationItem = {
   name: string

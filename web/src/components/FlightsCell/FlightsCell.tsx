@@ -8,7 +8,7 @@ import type {
   CellSuccessProps,
   CellFailureProps,
   TypedDocumentNode,
-} from '@redwoodjs/web'
+} from '@cedarjs/web'
 
 import { ErrorIcon, FlightIcon } from 'src/icons/Icons'
 

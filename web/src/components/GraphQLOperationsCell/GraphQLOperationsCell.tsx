@@ -12,7 +12,7 @@ import {
 } from '@tremor/react'
 import type { GraphQLOperationsQuery } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import SpansDetailsTable from '../SpansDetailsTable/SpansDetailsTable'
 import StatisticsDetailTable from '../Statistics/StatisticsDetailTable'

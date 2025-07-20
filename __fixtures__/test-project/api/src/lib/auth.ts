@@ -1,6 +1,6 @@
-import type { Decoded } from '@redwoodjs/api'
-import { parseJWT } from '@redwoodjs/api'
-import { AuthenticationError, ForbiddenError } from '@redwoodjs/graphql-server'
+import type { Decoded } from '@cedarjs/api'
+import { parseJWT } from '@cedarjs/api'
+import { AuthenticationError, ForbiddenError } from '@cedarjs/graphql-server'
 
 import { db } from './db'
 
@@ -127,7 +127,7 @@ export const hasRole = (roles: AllowedRoles): boolean => {
  * @throws {@link AuthenticationError} - If the currentUser is not authenticated
  * @throws {@link ForbiddenError} If the currentUser is not allowed due to role permissions
  *
- * @see https://github.com/redwoodjs/redwood/tree/main/packages/auth for examples
+ * @see https://github.com/cedarjs/cedar/tree/main/packages/auth for examples
  */
 export const requireAuth = ({ roles }: { roles?: AllowedRoles } = {}) => {
   if (!isAuthenticated()) {

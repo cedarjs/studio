@@ -8,8 +8,8 @@ async function seed() {
     { name: 'GraphQL', colour: 'E600E6' },
     { name: 'SQL', colour: 'FF1AC6' },
     { name: 'Prisma', colour: '8000FF' },
-    { name: 'Redwood Service', colour: 'FF6600' },
-    { name: 'Redwood Function', colour: '00B33C' },
+    { name: 'CedarJS Service', colour: 'FF6600' },
+    { name: 'CedarJS Function', colour: '00B33C' },
   ]
   for (const spanType of defaultOTelTraceSpanTypes) {
     const spanTypeExists = await db.oTelTraceSpanType.findUnique({

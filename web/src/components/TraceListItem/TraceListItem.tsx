@@ -1,6 +1,6 @@
 import { Badge, Button, Card, Divider, Flex, Text, Title } from '@tremor/react'
 
-import { Link, routes } from '@redwoodjs/router'
+import { Link, routes } from '@cedarjs/router'
 
 import { TracesIcon } from 'src/icons/Icons'
 

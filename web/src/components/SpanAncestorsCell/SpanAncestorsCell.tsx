@@ -6,7 +6,7 @@ import type {
   FindSpanAncestorsQueryVariables,
 } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import { SpanGenericToggleContext } from 'src/context/SpanGenericToggleContext'
 

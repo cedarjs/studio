@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import TraceCell from 'src/components/TraceCell'
 import {

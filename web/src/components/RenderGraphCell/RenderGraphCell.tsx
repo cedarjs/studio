@@ -10,7 +10,7 @@ import type {
   CellSuccessProps,
   CellFailureProps,
   TypedDocumentNode,
-} from '@redwoodjs/web'
+} from '@cedarjs/web'
 
 import { RouteGraph } from 'src/components/RenderGraphCell/RouteGraph'
 import { RouteCardsGrid } from 'src/components/RenderGraphRoutesCell/RouteCardsGrid'

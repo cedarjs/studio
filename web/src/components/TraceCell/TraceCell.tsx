@@ -18,8 +18,8 @@ import {
 } from '@tremor/react'
 import type { FindTraceQuery, FindTraceQueryVariables } from 'types/graphql'
 
-import { routes } from '@redwoodjs/router'
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import { routes } from '@cedarjs/router'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import { SpanGenericToggleContext } from 'src/context/SpanGenericToggleContext'
 import { ClockIcon, MapIcon } from 'src/icons/Icons'

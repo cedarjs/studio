@@ -50,7 +50,7 @@ async function main() {
   const testProjectName = options.testProjectName || 'test-project'
   const studioPath = path.join(__dirname, '..')
   const rootPackageJson = fs.readJSONSync(path.join(studioPath, 'package.json'))
-  const studioRwVersion = rootPackageJson.devDependencies['@redwoodjs/core']
+  const studioRwVersion = rootPackageJson.devDependencies['@cedarjs/core']
   const testProjectPath = path.join(
     __dirname,
     '..',
@@ -61,7 +61,7 @@ async function main() {
     path.join(testProjectPath, 'package.json')
   )
   const testProjectRwVersion =
-    testProjectRootPackageJson.devDependencies['@redwoodjs/core']
+    testProjectRootPackageJson.devDependencies['@cedarjs/core']
 
   if (testProjectName !== 'test-project') {
     console.log()
@@ -89,10 +89,10 @@ async function main() {
   // TODO: Don't just skip this for non test-project projects. We should have
   // a better way to handle this.
   if (!release && testProjectName === 'test-project') {
-    spinner.start('Asserting matching RW versions...')
+    spinner.start('Asserting matching CedarJS versions...')
     // exits on mismatched versions
     assertMatchingRwVersions(testProjectPath, studioPath, studioRwVersion)
-    spinner.succeed('Matching RW versions!')
+    spinner.succeed('Matching CedarJS versions!')
   }
 
   // Build the project
@@ -207,25 +207,25 @@ async function main() {
     path.join(studioPath, 'api', 'package.json')
   )
 
-  // Note that we're not adding any @redwoodjs packages to the list of
-  // dependencies in the package.json file. We want to reuse the version of RW
-  // the user already has, not install another version nested inside the
+  // Note that we're not adding any @cedarjs packages to the list of
+  // dependencies in the package.json file. We want to reuse the version of
+  // CedarJS the user already has, not install another version nested inside the
   // node_modules folder of Studio in the user's project.
   //
   // We don't expect users to manually install Studio using their package
   // manager. Instead, we expect them to just run it using `yarn rw studio`,
   // and that script will install it on the first run. So we'll make sure
-  // that script also installs any additional @redwoodjs packages that are
-  // needed, using the same version as other RW pages already installed.
+  // that script also installs any additional @cedarjs packages that are
+  // needed, using the same version as other CedarJS pages already installed.
   fs.writeJSONSync(
     path.join(packagedDir, 'package.json'),
     {
-      name: '@redwoodjs/studio',
+      name: '@cedarjs/studio',
       version: rootPackageJson.version,
-      description: "Redwood's development studio",
+      description: "CedarJS's development studio",
       repository: {
         type: 'git',
-        url: 'git+https://github.com/redwoodjs/studio.git',
+        url: 'git+https://github.com/cedarjs/studio.git',
       },
       license: 'MIT',
       main: 'api/dist/server.js',
@@ -234,10 +234,10 @@ async function main() {
         'rw-studio': 'api/dist/bin/rw-studio.js',
       },
       dependencies: {
-        // Filter out @redwoodjs packages
+        // Filter out @cedarjs packages
         ...Object.entries(apiPackageJson.dependencies).reduce(
           (dependencies, [packageName, version]) => {
-            if (!packageName.startsWith('@redwoodjs/')) {
+            if (!packageName.startsWith('@cedarjs/')) {
               dependencies[packageName] = version
             }
 
@@ -285,14 +285,14 @@ async function main() {
 
   const packageJson = JSON.parse(packageJsonString)
 
-  if (!packageJson.resolutions?.['@redwoodjs/studio']) {
+  if (!packageJson.resolutions?.['@cedarjs/studio']) {
     if (!verbose) {
       spinner.start('Adding yarn resolution for Studio...')
     }
 
     packageJson.resolutions = {
       ...packageJson.resolutions,
-      '@redwoodjs/studio': './../../packaged.tgz',
+      '@cedarjs/studio': './../../packaged.tgz',
     }
 
     fs.writeFileSync(
@@ -326,17 +326,17 @@ async function main() {
   // rsc-test-project project we're using RW canary we couldn't do that anymore.
   // Make sure this is good enough. Do we need to do something more clever?
   if (
-    packageJson.dependencies?.['@redwoodjs/realtime'] !== testProjectRwVersion
+    packageJson.dependencies?.['@cedarjs/realtime'] !== testProjectRwVersion
   ) {
     if (!verbose) {
-      // Studio needs @redwoodjs/realtime. The test project doesn't use it itself,
+      // Studio needs @cedarjs/realtime. The test project doesn't use it itself,
       // so we manually install it. Normally this is handled by `yarn rw studio`
       // TODO: Why can't we just let `yarn rw studio` do it then?
-      spinner.start("Adding @redwoodjs/realtime, as it's used by Studio...")
+      spinner.start("Adding @cedarjs/realtime, as it's used by Studio...")
     }
-    await $`yarn add @redwoodjs/realtime@${testProjectRwVersion}`
+    await $`yarn add @cedarjs/realtime@${testProjectRwVersion}`
     if (!verbose) {
-      spinner.succeed(`@redwoodjs/realtime@${testProjectRwVersion} added!`)
+      spinner.succeed(`@cedarjs/realtime@${testProjectRwVersion} added!`)
     }
   }
 
@@ -358,24 +358,24 @@ function assertMatchingRwVersions(
   )
 
   if (
-    testProjectRootPackageJSON.devDependencies['@redwoodjs/core'] !==
+    testProjectRootPackageJSON.devDependencies['@cedarjs/core'] !==
     studioRwVersion
   ) {
     console.log()
-    console.log(chalk.redBright('RedwoodJS version mismatch!'))
+    console.log(chalk.redBright('CedarJS version mismatch!'))
     console.log()
     console.log(
-      `RedwoodJS version in ${chalk.bold('package.json')} in ${chalk.bold(
+      `CedarJS version in ${chalk.bold('package.json')} in ${chalk.bold(
         testProjectPath
       )} is ${chalk.bold(
-        testProjectRootPackageJSON.devDependencies['@redwoodjs/core']
+        testProjectRootPackageJSON.devDependencies['@cedarjs/core']
       )}, but the version in ${chalk.bold('package.json')} in ${chalk.bold(
         studioPath
       )} is ${chalk.bold(studioRwVersion)}.`
     )
     console.log()
     console.log(
-      `Please update the RedwoodJS version in ${chalk.bold(
+      `Please update the CedarJS version in ${chalk.bold(
         'package.json'
       )} in ${chalk.bold(testProjectPath)} to match the version in ${chalk.bold(
         'package.json'

@@ -7,7 +7,7 @@ import type {
   PerformanceMetric,
 } from 'types/graphql'
 
-import { Metadata, useQuery } from '@redwoodjs/web'
+import { Metadata, useQuery } from '@cedarjs/web'
 
 import { ErrorIcon } from 'src/icons/Icons'
 

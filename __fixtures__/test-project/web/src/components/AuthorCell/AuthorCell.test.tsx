@@ -1,13 +1,13 @@
-import { render } from '@redwoodjs/testing/web'
+import { render } from '@cedarjs/testing/web'
 
 import { Loading, Empty, Failure, Success } from './AuthorCell'
 import { standard } from './AuthorCell.mock'
 
 // Generated boilerplate tests do not account for all circumstances
 // and can fail without adjustments, e.g. Float and DateTime types.
-//           Please refer to the RedwoodJS Testing Docs:
-//        https://redwoodjs.com/docs/testing#testing-cells
-// https://redwoodjs.com/docs/testing#jest-expect-type-considerations
+//           Please refer to the CedarJS Testing Docs:
+//        https://cedarjs.com/docs/testing#testing-cells
+// https://cedarjs.com/docs/testing#jest-expect-type-considerations
 
 describe('AuthorCell', () => {
   it('renders Loading successfully', () => {
@@ -31,7 +31,7 @@ describe('AuthorCell', () => {
   // When you're ready to test the actual output of your component render
   // you could test that, for example, certain text is present:
   //
-  // 1. import { screen } from '@redwoodjs/testing/web'
+  // 1. import { screen } from '@cedarjs/testing/web'
   // 2. Add test: expect(screen.getByText('Hello, world')).toBeInTheDocument()
 
   it('renders Success successfully', async () => {

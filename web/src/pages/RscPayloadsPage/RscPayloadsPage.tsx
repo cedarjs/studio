@@ -1,7 +1,7 @@
 import { Title } from '@tremor/react'
 
-import { Link, routes } from '@redwoodjs/router'
-import { Metadata } from '@redwoodjs/web'
+import { Link, routes } from '@cedarjs/router'
+import { Metadata } from '@cedarjs/web'
 
 import FlightsCell from 'src/components/FlightsCell'
 

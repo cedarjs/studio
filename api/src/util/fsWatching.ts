@@ -2,7 +2,7 @@ import path from 'node:path'
 
 import chokidar from 'chokidar'
 
-import { liveQueryStore } from '@redwoodjs/realtime'
+import { liveQueryStore } from '@cedarjs/realtime'
 
 import { resyncMailRenderers } from 'src/services/mailRenderers/mailRenderers'
 import { resyncMailTemplate } from 'src/services/mailTemplates/mailTemplates'

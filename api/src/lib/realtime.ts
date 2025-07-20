@@ -1,11 +1,11 @@
-import { RedwoodRealtimeOptions } from '@redwoodjs/realtime'
+import { RedwoodRealtimeOptions } from '@cedarjs/realtime'
 
 import subscriptions from 'src/subscriptions/**/*.{js,ts}'
 
 /**
- * Configure RedwoodJS Realtime
+ * Configure CedarJS Realtime
  *
- * See https://redwoodjs.com/docs/realtime
+ * See https://cedarjs.com/docs/realtime
  *
  * Realtime supports Live Queries and Subscriptions over GraphQL SSE.
  *

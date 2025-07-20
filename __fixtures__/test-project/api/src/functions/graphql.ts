@@ -1,7 +1,7 @@
-import { createAuthDecoder as createDbAuthDecoder } from '@redwoodjs/auth-dbauth-api'
-import { authDecoder as netlifyAuthDecoder } from '@redwoodjs/auth-netlify-api'
-import { authDecoder as supabaseAuthDecoder } from '@redwoodjs/auth-supabase-api'
-import { createGraphQLHandler } from '@redwoodjs/graphql-server'
+import { createAuthDecoder as createDbAuthDecoder } from '@cedarjs/auth-dbauth-api'
+import { authDecoder as netlifyAuthDecoder } from '@cedarjs/auth-netlify-api'
+import { authDecoder as supabaseAuthDecoder } from '@cedarjs/auth-supabase-api'
+import { createGraphQLHandler } from '@cedarjs/graphql-server'
 
 import directives from 'src/directives/**/*.{js,ts}'
 import sdls from 'src/graphql/**/*.sdl.{js,ts}'

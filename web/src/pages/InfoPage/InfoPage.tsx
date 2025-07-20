@@ -1,4 +1,4 @@
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import InfoCell from 'src/components/InfoCell'
 

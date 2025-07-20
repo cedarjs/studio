@@ -8,7 +8,7 @@ import {
 } from '@tremor/react'
 import type { FindGraphQLSchemaQuery } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import { GraphQLRelationshipsTable } from './GraphQLRelationshipsTable'
 import { GraphQLSchemaDiagram } from './GraphQLSchemaDiagram'

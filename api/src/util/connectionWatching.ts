@@ -1,4 +1,4 @@
-import { liveQueryStore } from '@redwoodjs/realtime'
+import { liveQueryStore } from '@cedarjs/realtime'
 
 import { db } from 'src/lib/db'
 

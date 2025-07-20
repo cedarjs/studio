@@ -7,9 +7,9 @@ import {
   Submit,
   FieldError,
   Label,
-} from '@redwoodjs/forms'
-import { useMutation } from '@redwoodjs/web'
-import { toast, Toaster } from '@redwoodjs/web/toast'
+} from '@cedarjs/forms'
+import { useMutation } from '@cedarjs/web'
+import { toast, Toaster } from '@cedarjs/web/toast'
 
 const CREATE_CONTACT = gql`
   mutation CreateContactMutation($input: CreateContactInput!) {

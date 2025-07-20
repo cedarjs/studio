@@ -3,15 +3,15 @@ import crypto from 'node:crypto'
 import path from 'path'
 import { basename, normalize } from 'path'
 
-import { SyntaxError, ValidationError } from '@redwoodjs/graphql-server'
+import { SyntaxError, ValidationError } from '@cedarjs/graphql-server'
 import {
   //getPaths,
   resolveFile,
-} from '@redwoodjs/project-config'
-import { getProject } from '@redwoodjs/structure'
-import type { RWLayout } from '@redwoodjs/structure/dist/model/RWLayout'
-import type { RWPage } from '@redwoodjs/structure/dist/model/RWPage'
-import type { RWRoute } from '@redwoodjs/structure/dist/model/RWRoute'
+} from '@cedarjs/project-config'
+import { getProject } from '@cedarjs/structure'
+import type { RWLayout } from '@cedarjs/structure/dist/model/RWLayout'
+import type { RWPage } from '@cedarjs/structure/dist/model/RWPage'
+import type { RWRoute } from '@cedarjs/structure/dist/model/RWRoute'
 
 import { getUserProjectConfig } from 'src/util/project'
 import { getUserProjectPaths as getPaths } from 'src/util/project'

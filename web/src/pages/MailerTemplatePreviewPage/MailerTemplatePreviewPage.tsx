@@ -18,7 +18,7 @@ import {
   GetMailTemplates,
 } from 'types/graphql'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import MailRenderer from 'src/components/MailRenderer/MailRenderer'
 import { VariableIcon } from 'src/icons/Icons'

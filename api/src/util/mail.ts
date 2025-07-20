@@ -1,7 +1,7 @@
 import { simpleParser as simpleMailParser } from 'mailparser'
 import type { SMTPServerDataStream, SMTPServerSession } from 'smtp-server'
 
-import { liveQueryStore } from '@redwoodjs/realtime'
+import { liveQueryStore } from '@cedarjs/realtime'
 
 import { db, generateTypicalValues } from 'src/lib/db'
 import { logger } from 'src/lib/logger'

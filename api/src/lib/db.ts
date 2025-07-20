@@ -3,7 +3,7 @@
 
 import { nanoid } from "nanoid";
 
-import { emitLogLevels, handlePrismaLogging } from "@redwoodjs/api/logger";
+import { emitLogLevels, handlePrismaLogging } from "@cedarjs/api/logger";
 
 import { PrismaClient } from "../../db/client";
 

@@ -9,7 +9,7 @@ import {
 import { formatDistanceToNow, parseISO } from 'date-fns'
 import type { SpansByAttributeKeyAndType } from 'types/graphql'
 
-import { routes } from '@redwoodjs/router'
+import { routes } from '@cedarjs/router'
 
 import { LinkingIcon } from '../LinkingIcon/LinkingIcon'
 

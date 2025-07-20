@@ -13,7 +13,7 @@ import {
   mergeRefs,
 } from '@tremor/react/dist/lib/utils'
 
-import { navigate } from '@redwoodjs/router'
+import { navigate } from '@cedarjs/router'
 export const makeTrackerClassName = makeClassName('Tracker')
 
 export interface TrackerBlockProps {

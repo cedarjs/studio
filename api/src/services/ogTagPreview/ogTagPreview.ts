@@ -1,7 +1,7 @@
 import openGraphScraper from 'open-graph-scraper'
 import type { QueryResolvers } from 'types/graphql'
 
-import { SyntaxError } from '@redwoodjs/graphql-server'
+import { SyntaxError } from '@cedarjs/graphql-server'
 
 import { auditor } from 'src/lib/og/og'
 import { getUserProjectConfig } from 'src/util/project'

@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
 
-import type { AvailableRoutes } from '@redwoodjs/router'
+import type { AvailableRoutes } from '@cedarjs/router'
 
 import {
   AboutIcon,

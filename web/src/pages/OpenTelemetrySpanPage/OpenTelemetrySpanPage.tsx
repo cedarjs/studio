@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import SpanCell from 'src/components/SpanCell'
 import {

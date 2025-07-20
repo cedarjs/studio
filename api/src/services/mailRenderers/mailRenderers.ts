@@ -3,7 +3,7 @@ import type { MutationResolvers, QueryResolvers } from 'types/graphql'
 import {
   type LiveQueryStorageMechanism,
   liveQueryStore,
-} from '@redwoodjs/realtime'
+} from '@cedarjs/realtime'
 
 import { db } from 'src/lib/db'
 import { getUserProjectMailer } from 'src/util/project'

@@ -2,7 +2,7 @@ import { EllipsisVerticalIcon } from '@heroicons/react/20/solid'
 import { Icon } from '@tremor/react'
 import type { Route } from 'types/graphql'
 
-import { Link, routes } from '@redwoodjs/router'
+import { Link, routes } from '@cedarjs/router'
 
 import { RouteIcon } from 'src/icons/Icons'
 

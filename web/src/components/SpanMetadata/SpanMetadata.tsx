@@ -1,7 +1,7 @@
 import { Flex, List, ListItem } from '@tremor/react'
 import { toDate, formatISO } from 'date-fns'
 
-import { routes } from '@redwoodjs/router'
+import { routes } from '@cedarjs/router'
 
 import { LinkingIcon } from '../LinkingIcon/LinkingIcon'
 

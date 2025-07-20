@@ -7,13 +7,13 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "8.4.0",
-    "@redwoodjs/project-config": "8.4.0",
-    "@redwoodjs/studio": "12",
+    "@cedarjs/core": "0.4.0",
+    "@cedarjs/project-config": "0.4.0",
+    "@cedarjs/studio": "0.4.0",
     "prettier-plugin-tailwindcss": "0.5.12"
   },
   "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config",
+    "extends": "@cedarjs/eslint-config",
     "root": true
   },
   "engines": {
@@ -24,9 +24,9 @@
   },
   "packageManager": "yarn@4.4.0",
   "resolutions": {
-    "@redwoodjs/studio": "./../../packaged.tgz"
+    "@cedarjs/studio": "./../../packaged.tgz"
   },
   "dependencies": {
-    "@redwoodjs/realtime": "8.4.0"
+    "@cedarjs/realtime": "0.4.0"
   }
 }

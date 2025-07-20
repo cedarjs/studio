@@ -1,6 +1,6 @@
 import { Title } from '@tremor/react'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import GraphQLOperationsCell from 'src/components/GraphQLOperationsCell'
 

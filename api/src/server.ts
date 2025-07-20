@@ -7,8 +7,8 @@ import execa from 'execa'
 import open from 'open'
 import { SMTPServer } from 'smtp-server'
 
-import { createServer } from '@redwoodjs/api-server'
-import { coerceRootPath, redwoodFastifyWeb } from '@redwoodjs/fastify-web'
+import { createServer } from '@cedarjs/api-server'
+import { coerceRootPath, redwoodFastifyWeb } from '@cedarjs/fastify-web'
 
 import { logger } from 'src/lib/logger'
 
@@ -27,7 +27,7 @@ export async function serve(
     enableWeb: false,
   }
 ) {
-  logger.info('Starting RedwoodJS Studio')
+  logger.info('Starting Cedar Studio')
   // TODO: Have the redwood cli set this env var when execa runs this file
   // Ensure we're acting from the studio project root and not the user project root
   process.env.RWJS_CWD = __dirname
@@ -122,7 +122,7 @@ export async function serve(
   // Start the mail server
   const { handleMail } = await import('./util/mail.js')
   const smtpServer = new SMTPServer({
-    banner: 'RedwoodJS Studio SMTP Server',
+    banner: 'Cedar Studio SMTP Server',
     authOptional: true,
     hideSTARTTLS: true,
     onData: handleMail,

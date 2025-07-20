@@ -1,11 +1,11 @@
 # README
 
-Welcome to [RedwoodJS](https://redwoodjs.com)!
+Welcome to [CedarJS](https://cedarjs.com)!
 
 > **Prerequisites**
 >
 > - Redwood requires [Node.js](https://nodejs.org/en/) (=20.x) and [Yarn](https://yarnpkg.com/)
-> - Are you on Windows? For best results, follow our [Windows development setup](https://redwoodjs.com/docs/how-to/windows-development-setup) guide
+> - Are you on Windows? For best results, follow our [Windows development setup](https://cedarjs.com/docs/how-to/windows-development-setup) guide
 
 Start by installing dependencies:
 
@@ -29,7 +29,7 @@ Your browser should automatically open to [http://localhost:8910](http://localho
 > yarn redwood --help
 > ```
 >
-> For all the details, see the [CLI reference](https://redwoodjs.com/docs/cli-commands).
+> For all the details, see the [CLI reference](https://cedarjs.com/docs/cli-commands).
 
 ## Prisma and the database
 
@@ -76,7 +76,7 @@ Don't know what your data models look like? That's more than ok—Redwood integr
 yarn rw storybook
 ```
 
-Seeing "Couldn't find any stories"? That's because you need a `*.stories.{tsx,jsx}` file. The Redwood CLI makes getting one easy enough—try generating a [Cell](https://redwoodjs.com/docs/cells), Redwood's data-fetching abstraction:
+Seeing "Couldn't find any stories"? That's because you need a `*.stories.{tsx,jsx}` file. The Redwood CLI makes getting one easy enough—try generating a [Cell](https://cedarjs.com/docs/cells), Redwood's data-fetching abstraction:
 
 ```
 yarn rw generate cell examplePosts
@@ -96,7 +96,7 @@ It'd be hard to scale from side project to startup without a few tests. Redwood 
 yarn rw test
 ```
 
-To make the integration even more seamless, Redwood augments Jest with database [scenarios](https://redwoodjs.com/docs/testing#scenarios)  and [GraphQL mocking](https://redwoodjs.com/docs/testing#mocking-graphql-calls).
+To make the integration even more seamless, Redwood augments Jest with database [scenarios](https://cedarjs.com/docs/testing#scenarios)  and [GraphQL mocking](https://cedarjs.com/docs/testing#mocking-graphql-calls).
 
 ## Ship it
 
@@ -106,7 +106,7 @@ Redwood is designed for both serverless deploy targets like Netlify and Vercel a
 yarn rw setup deploy --help
 ```
 
-Don't go live without auth! Lock down your app with Redwood's built-in, database-backed authentication system ([dbAuth](https://redwoodjs.com/docs/authentication#self-hosted-auth-installation-and-setup)), or integrate with nearly a dozen third-party auth providers:
+Don't go live without auth! Lock down your app with Redwood's built-in, database-backed authentication system ([dbAuth](https://cedarjs.com/docs/authentication#self-hosted-auth-installation-and-setup)), or integrate with nearly a dozen third-party auth providers:
 
 ```
 yarn rw setup auth --help
@@ -114,9 +114,9 @@ yarn rw setup auth --help
 
 ## Next Steps
 
-The best way to learn Redwood is by going through the comprehensive [tutorial](https://redwoodjs.com/docs/tutorial/foreword) and joining the community (via the [Discourse forum](https://community.redwoodjs.com) or the [Discord server](https://discord.gg/redwoodjs)).
+The best way to learn Redwood is by going through the comprehensive [tutorial](https://cedarjs.com/docs/tutorial/foreword) and joining the community (via the [Discourse forum](https://community.redwoodjs.com) or the [Discord server](https://cedarjs.com/discord)).
 
 ## Quick Links
 
-- Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
-- [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+- Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/cedarjs), and subscribe to the [newsletter](https://cedarjs.com/newsletter)
+- [Learn how to contribute](https://cedarjs.com/docs/contributing)

@@ -2,7 +2,7 @@
 
 import { coverage } from '@graphql-inspector/core'
 
-import { SyntaxError } from '@redwoodjs/graphql-server'
+import { SyntaxError } from '@cedarjs/graphql-server'
 
 import { logger } from 'src/lib/logger'
 import { getSchema } from 'src/util/graphqlSchema'

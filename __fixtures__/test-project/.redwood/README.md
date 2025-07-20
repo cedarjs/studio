@@ -2,7 +2,7 @@
 
 ## What is this directory?
 
-Redwood uses this `.redwood` directory to store transitory data that aids in the smooth and convenient operation of your Redwood project.
+CedarJS uses this `.redwood` directory to store transitory data that aids in the smooth and convenient operation of your Redwood project.
 
 ## Do I need to do anything with this directory?
 
@@ -37,7 +37,7 @@ We try to keep this README up to date but you may, from time to time, find other
 
 ### Telemetry
 
-RedwoodJS collects completely anonymous telemetry data about general usage. For transparency, that data is viewable in the respective directories and files. To learn more and manage your project's settings, visit [telemetry.redwoodjs.com](https://telemetry.redwoodjs.com).
+CedarJS collects completely anonymous telemetry data about general usage. For transparency, that data is viewable in the respective directories and files. To learn more and manage your project's settings, visit [telemetry.cedarjs.com](https://telemetry.cedarjs.com).
 
 ### Have any questions?
 

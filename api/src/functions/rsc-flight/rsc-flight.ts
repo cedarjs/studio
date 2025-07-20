@@ -10,8 +10,8 @@ import { logger } from 'src/lib/logger'
  * Important: When deployed, a custom serverless function is an open API endpoint and
  * is your responsibility to secure appropriately.
  *
- * @see {@link https://redwoodjs.com/docs/serverless-functions#security-considerations|Serverless Function Considerations}
- * in the RedwoodJS documentation for more information.
+ * @see {@link https://cedarjs.com/docs/serverless-functions#security-considerations|Serverless Function Considerations}
+ * in the CedarJS documentation for more information.
  *
  * @typedef { import('aws-lambda').APIGatewayEvent } APIGatewayEvent
  * @typedef { import('aws-lambda').Context } Context

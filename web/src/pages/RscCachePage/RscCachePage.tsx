@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react'
 
 import { Button, Switch } from '@tremor/react'
 
-import { Metadata } from '@redwoodjs/web'
+import { Metadata } from '@cedarjs/web'
 
 import { TrashIcon } from 'src/icons/Icons'
 

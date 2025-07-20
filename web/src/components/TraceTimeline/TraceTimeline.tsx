@@ -1,6 +1,6 @@
 import { Flex } from '@tremor/react'
 
-import { routes } from '@redwoodjs/router'
+import { routes } from '@cedarjs/router'
 
 import { LinkingIcon } from '../LinkingIcon/LinkingIcon'
 

@@ -12,8 +12,8 @@ import {
 } from '@tremor/react'
 import type { FindSpanQuery, FindSpanQueryVariables } from 'types/graphql'
 
-import { Link, routes } from '@redwoodjs/router'
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import { Link, routes } from '@cedarjs/router'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import { SpanGenericToggleContext } from 'src/context/SpanGenericToggleContext'
 import { TracesIcon } from 'src/icons/Icons'

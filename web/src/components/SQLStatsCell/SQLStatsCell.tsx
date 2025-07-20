@@ -4,7 +4,7 @@ import type {
   SQLDashboardStatsQueryVariables,
 } from 'types/graphql'
 
-import type { CellSuccessProps, CellFailureProps } from '@redwoodjs/web'
+import type { CellSuccessProps, CellFailureProps } from '@cedarjs/web'
 
 import ChartHeading from 'src/components/Charts/ChartHeading'
 import { DatabaseIcon } from 'src/icons/Icons'

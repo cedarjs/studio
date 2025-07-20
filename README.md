@@ -33,7 +33,7 @@ If you have to generate migrations because you have altered the database schema 
 2. Run `yarn studio:package` - this will rebuild the project and package it locally.
 3. Edit `./package.json` in the project you want to test with to include a
    resolution for Studio pointing to the local Studio package. For example:
-   `"@redwoodjs/studio": "/Users/tobbe/dev/redwood/studio/packaged.tgz"`
+   `"@cedarjs/studio": "/Users/tobbe/dev/cedarjs/studio/packaged.tgz"`
 4. Run `yarn install` in the project you want to test with to install the new version of Studio.
 5. Run the test project (`yarn rw serve`)
 6. Run `yarn rw studio` from within the test project.
@@ -96,7 +96,7 @@ Then ...
 
 ### Running Prisma Studio
 
-RW_STUDIO_DATABASE_URL=file:/Users/tobbe/dev/redwood/studio/__fixtures__/rsc-test-project/.redwood/studio/prisma.sqlite npx prisma studio --schema ../../api/db/schema.prisma
+RW_STUDIO_DATABASE_URL=file:/Users/tobbe/dev/cedarjs/studio/__fixtures__/rsc-test-project/.redwood/studio/prisma.sqlite npx prisma studio --schema ../../api/db/schema.prisma
 
 
 ## Releasing
