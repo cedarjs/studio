@@ -3,14 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@cedarjs/api": "0.4.0",
-    "@cedarjs/auth-dbauth-api": "0.4.0",
-    "@cedarjs/auth-netlify-api": "0.4.0",
-    "@cedarjs/auth-supabase-api": "0.4.0",
-    "@cedarjs/graphql-server": "0.4.0",
-    "@cedarjs/mailer-core": "0.4.0",
-    "@cedarjs/mailer-handler-nodemailer": "0.4.0",
-    "@cedarjs/mailer-renderer-react-email": "0.4.0",
+    "@cedarjs/api": "2.3.0",
+    "@cedarjs/auth-dbauth-api": "2.3.0",
+    "@cedarjs/auth-netlify-api": "2.3.0",
+    "@cedarjs/auth-supabase-api": "2.3.0",
+    "@cedarjs/graphql-server": "2.3.0",
+    "@cedarjs/mailer-core": "2.3.0",
+    "@cedarjs/mailer-handler-nodemailer": "2.3.0",
+    "@cedarjs/mailer-renderer-react-email": "2.3.0",
     "@opentelemetry/api": "^1.6.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.44.0",
     "@opentelemetry/instrumentation": "^0.44.0",
@@ -23,7 +23,7 @@
     "@react-email/components": "^0.0.25"
   },
   "devDependencies": {
-    "@cedarjs/mailer-handler-in-memory": "0.4.0",
-    "@cedarjs/mailer-handler-studio": "0.4.0"
+    "@cedarjs/mailer-handler-in-memory": "2.3.0",
+    "@cedarjs/mailer-handler-studio": "2.3.0"
   }
 }

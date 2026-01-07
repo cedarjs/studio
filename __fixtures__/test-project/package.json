@@ -1,32 +1,23 @@
 {
   "private": true,
-  "workspaces": {
-    "packages": [
-      "api",
-      "web"
-    ]
-  },
+  "workspaces": [
+    "api",
+    "web"
+  ],
   "devDependencies": {
-    "@cedarjs/core": "0.4.0",
-    "@cedarjs/project-config": "0.4.0",
-    "@cedarjs/studio": "0.4.0",
+    "@cedarjs/core": "2.3.0",
+    "@cedarjs/project-config": "2.3.0",
+    "@cedarjs/studio": "2.3.0",
     "prettier-plugin-tailwindcss": "0.5.12"
   },
-  "eslintConfig": {
-    "extends": "@cedarjs/eslint-config",
-    "root": true
-  },
   "engines": {
-    "node": "=20.x"
+    "node": "=24.x"
   },
-  "prisma": {
-    "seed": "yarn rw exec seed"
-  },
-  "packageManager": "yarn@4.4.0",
+  "packageManager": "yarn@4.12.0",
   "resolutions": {
     "@cedarjs/studio": "./../../packaged.tgz"
   },
   "dependencies": {
-    "@cedarjs/realtime": "0.4.0"
+    "@cedarjs/realtime": "2.3.0"
   }
 }

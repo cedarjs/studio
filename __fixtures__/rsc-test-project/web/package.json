@@ -13,18 +13,18 @@
   "dependencies": {
     "@apollo/client-react-streaming": "0.10.0",
     "@jtoar/throw-on-client": "0.0.1",
-    "@cedarjs/auth-dbauth-middleware": "0.4.0",
-    "@cedarjs/auth-dbauth-web": "0.4.0",
-    "@cedarjs/forms": "0.4.0",
-    "@cedarjs/router": "0.4.0",
-    "@cedarjs/web": "0.4.0",
+    "@cedarjs/auth-dbauth-middleware": "2.3.0",
+    "@cedarjs/auth-dbauth-web": "2.3.0",
+    "@cedarjs/forms": "2.3.0",
+    "@cedarjs/router": "2.3.0",
+    "@cedarjs/web": "2.3.0",
     "@tobbe.dev/rsc-test": "0.0.5",
     "client-only": "0.0.1",
     "react": "19.0.0-rc-f2df5694-20240916",
     "react-dom": "19.0.0-rc-f2df5694-20240916"
   },
   "devDependencies": {
-    "@cedarjs/vite": "0.4.0",
+    "@cedarjs/vite": "2.3.0",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19"
   }
