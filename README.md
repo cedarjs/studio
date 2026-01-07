@@ -116,7 +116,8 @@ RW_STUDIO_DATABASE_URL=file:/Users/tobbe/dev/cedarjs/studio/**fixtures**/rsc-tes
 
 ```
 npm version [major|minor|patch]
-git push upstream --follow-tags
+# or ...push upstream... depending on your setup
+git push origin --follow-tags
 yarn studio:package --release
 cd packaged
 npm publish
