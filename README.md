@@ -3,53 +3,62 @@
 ## Contributing
 
 ### Test packaged version
+
 1. Make your changes to the source code.
 2. Run `yarn studio:package` - this will rebuild the project and package it locally.
-3. (Re-)start Studio by running `yarn rw studio` from within the
-  `__fixtures__/test-project` directory.
-4. Run the Test Project that send in to Studio using `yarn rw dev` inside
-  `__fixtures__/test-project`
+3. (Re-)start Studio by running `yarn cedar studio` from within the
+   `__fixtures__/test-project` directory.
+4. Run the Test Project that send in to Studio using `yarn cedar dev` inside
+   `__fixtures__/test-project`
 5. (First time only) Migrate and seed the database:
-  ```bash
-  yarn rw prisma migrate dev
-  yarn rw prisma db seed
-  ```
+
+   ```bash
+   yarn cedar prisma migrate dev
+   yarn cedar prisma db seed
+   ```
+
 6. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
-  correct path for your project (see example below under
-  [Troubleshooting](#troubleshooting))
+   correct path for your project (see example below under
+   [Troubleshooting](#troubleshooting))
 
 ### Local dev (Experimental)
-1. (Should only have to do this once)
-  `cd __fixtures__/test-project && touch yarn.lock && yarn`
-2. Make your changes to the source code.
-3. Run `RW_STUDIO_USER_PROJECT_PATH=./__fixtures__/test-project yarn rw dev`
-4. Run the Test Project that send in to Studio using `yarn rw dev` inside
-  `__fixtures__/test-project`
-5. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
-  correct path for your project (see example below under
-  [Troubleshooting](#troubleshooting))
 
-If you have to generate migrations because you have altered the database schema please use `yarn studio:migrate` as this will set the appropriate configuration above the default `yarn rw prisma migrate dev`.
+1. (Should only have to do this once)
+   `cd __fixtures__/test-project && touch yarn.lock && yarn`
+2. Make your changes to the source code.
+3. Run `RW_STUDIO_USER_PROJECT_PATH=./__fixtures__/test-project yarn cedar dev`
+4. Run the Test Project that send in to Studio using `yarn cedar dev` inside
+   `__fixtures__/test-project`
+5. Be sure you set the OpenTelemetry sdk path in `redwood.toml` to point to the
+   correct path for your project (see example below under
+   [Troubleshooting](#troubleshooting))
+
+If you have to generate migrations because you have altered the database schema
+please use `yarn studio:migrate` as this will set the appropriate configuration
+above the default `yarn cedar prisma migrate dev`.
 
 ### Test packaged version with a different project
 
 #### Initial setup
-1. Run `yarn rwfw project:tarsync` in the project you want to test with.
-2. Run `yarn studio:package` - this will rebuild the project and package it locally.
+
+1. Run `yarn cfw project:tarsync` in the project you want to test with.
+2. Run `yarn studio:package` - this will rebuild the project and package it
+   locally.
 3. Edit `./package.json` in the project you want to test with to include a
    resolution for Studio pointing to the local Studio package. For example:
    `"@cedarjs/studio": "/Users/tobbe/dev/cedarjs/studio/packaged.tgz"`
-4. Run `yarn install` in the project you want to test with to install the new version of Studio.
-5. Run the test project (`yarn rw serve`)
-6. Run `yarn rw studio` from within the test project.
+4. Run `yarn install` in the project you want to test with to install the new
+   version of Studio.
+5. Run the test project (`yarn cedar serve`)
+6. Run `yarn cedar studio` from within the test project.
 
 #### Subsequent Runs
+
 1. Make your changes to the Studio source code.
 2. Run `yarn studio:package` in the Studio project.
 3. Run `yarn install` in the test project
-4. Run the test project (`yarn rw serve`)
-5. Run `yarn rw studio` from within the test project.
-
+4. Run the test project (`yarn cedar serve`)
+5. Run `yarn cedar studio` from within the test project.
 
 ### Development
 
@@ -77,32 +86,31 @@ If you do not see any traces or spans, check that your `redwood.toml` points to 
 
 RW_STUDIO_DATABASE_URL=file:./dummy.sqlite
 
-* In studio project root
-* yarn rw prisma migrate reset to make sure dummy was up-to-date
+- In studio project root
+- yarn cedar prisma migrate reset to make sure dummy was up-to-date
 
 If adding a view a view:
 
-* yarn rw prisma migrate dev span-attribute-view --create-only
-* Wrote view
-* Update prisma schema with the view "model"
+- yarn cedar prisma migrate dev span-attribute-view --create-only
+- Wrote view
+- Update prisma schema with the view "model"
 
 If adding a mode:
 
-* Update prisma schema with the new "model"
-* yarn rw prisma migrate dev
+- Update prisma schema with the new "model"
+- yarn cedar prisma migrate dev
 
 Then ...
 
-* yarn rw prisma migrate reset
-* View was applied to "dummy.sqlite"
-* yarn studio:package
-* Deleted __fixtures__/test-project/.redwood/studio/prisma.sqlite to make sure migrate deploy really updated
-* Run studio via: yarn rw-studio to apply migrations
+- yarn cedar prisma migrate reset
+- View was applied to "dummy.sqlite"
+- yarn studio:package
+- Deleted **fixtures**/test-project/.redwood/studio/prisma.sqlite to make sure migrate deploy really updated
+- Run studio via: yarn rw-studio to apply migrations
 
 ### Running Prisma Studio
 
-RW_STUDIO_DATABASE_URL=file:/Users/tobbe/dev/cedarjs/studio/__fixtures__/rsc-test-project/.redwood/studio/prisma.sqlite npx prisma studio --schema ../../api/db/schema.prisma
-
+RW_STUDIO_DATABASE_URL=file:/Users/tobbe/dev/cedarjs/studio/**fixtures**/rsc-test-project/.redwood/studio/prisma.sqlite npx prisma studio --schema ../../api/db/schema.prisma
 
 ## Releasing
 
