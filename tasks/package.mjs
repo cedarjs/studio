@@ -194,6 +194,11 @@ async function main() {
     path.join(studioPath, 'redwood.toml'),
     path.join(packagedDir, 'redwood.toml')
   )
+  // The README file is copied because it shows up on npm's page for the package
+  fs.copySync(
+    path.join(studioPath, 'README.md'),
+    path.join(packagedDir, 'README.md')
+  )
   if (!verbose) {
     spinner.succeed('Misc files copied!')
   }
